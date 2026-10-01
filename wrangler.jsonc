@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fractal",
+  "compatibility_date": "2026-09-01",
+  // Static site: everything in docs/ is served as-is.
+  "assets": {
+    "directory": "./docs",
+    "html_handling": "auto-trailing-slash"
+  },
+  "routes": [
+    { "pattern": "fractal.metamorphixdesign.com", "custom_domain": true }
+  ],
+  "observability": { "enabled": true }
+}
